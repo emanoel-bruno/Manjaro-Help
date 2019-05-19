@@ -1,0 +1,1 @@
+systemctl enable fstrim.timer
