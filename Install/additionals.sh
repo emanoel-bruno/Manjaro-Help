@@ -18,3 +18,6 @@ sudo pacman -Syu smplayer smplayer-skins smplayer-themes
 
 # Install JDownloader2
 yay -Syu jdownloader2
+
+# Install LaTeX
+sudo pacman -Ss texlive-most texlive-lang

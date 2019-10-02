@@ -14,6 +14,11 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 # Allow to use Wifi on Lenovo Y720
 sudo tee /etc/modprobe.d/blacklist-ideapad.conf <<< "blacklist ideapad_laptop"
+pacman -S blueman
+pacman -S bluez
+pacman -S bluez-hid2hci
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
 
 # Set swap to be used when memory reachs 90%
 sudo sysctl vm.swappiness=10
